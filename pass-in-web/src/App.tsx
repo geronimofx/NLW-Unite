@@ -1,17 +1,12 @@
-interface IButton {
-  texto: string;
-}
-
-function MyButton(props: IButton) {
-  return <button className="bg-indigo-700 text-white rounded p-1 w-20">{props.texto}</button>
-}
+import { AttendeeList } from "./components/attendee-list";
+import { Header } from "./components/header";
 
 export function App() {
 
   return (
-    <div className="flex flex-col gap-2">
-      <h1>Hello World</h1>
-      <MyButton texto="Clique aqui" />
+    <div className="max-w-[1216px] mx-auto py-5 flex flex-col gap-5">
+      <Header />
+      <AttendeeList />
     </div>
   )
 
